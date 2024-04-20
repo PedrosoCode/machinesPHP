@@ -7,4 +7,5 @@ if (!isset($_SESSION['nome']) || empty($_SESSION['nome'])) {
     header("Location: login.html");
     exit;
 }
+echo("auth check linkado")
 ?>

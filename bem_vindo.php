@@ -8,6 +8,8 @@ if (!isset($_SESSION['nome'])) {
     header("Location: cadastro.html");
     exit;
 }
+
+echo("você está na home")
 ?>
 
 <!DOCTYPE html>

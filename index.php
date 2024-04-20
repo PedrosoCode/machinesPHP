@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Usuário</title>
 </head>
+
 <body>
     <h1>Cadastro de Usuário</h1>
     <form action="cadastrar.php" method="POST">
@@ -19,5 +21,8 @@
         <input type="submit" value="Cadastrar">
     </form>
     <p>Já tem uma conta? <a href="login.html">Clique aqui para entrar</a></p>
+    <br> <br> <br>
+    <p>Ir para a Home <a href="home.php">Clique aqui para entrar</a></p>
 </body>
+
 </html>
