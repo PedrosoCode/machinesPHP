@@ -10,4 +10,5 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo("Banco linkado")
+//TODO - Criar e usar variáveis de ambiente
 ?>

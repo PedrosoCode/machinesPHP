@@ -1,6 +1,9 @@
 <?php
 include('../conecta_banco.php');
 include('../auth_check.php');
+//FIXME - Configurar o debuguer do php
+//FIXME - Erro 500 ao submeter o form
+//TODO - Mudar o form para pegar o código do usuário automaticamente
 
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,12 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     }
 }
-
-// Fecha a conexão
-$conexao->close();
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +39,7 @@ $conexao->close();
     <title>Cadastro de Notebook</title>
 </head>
 <body>
+<h1>Bem-vindo, <?php echo htmlspecialchars($_SESSION['nome']); ?>!</h1>
     <h1>Cadastro de Notebook</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <label for="marca">Marca:</label>
